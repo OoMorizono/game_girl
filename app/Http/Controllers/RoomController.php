@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\game;
 use App\Models\room;
 use Illuminate\Http\Request;
 
-class GameController extends Controller
+class RoomController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,7 @@ class GameController extends Controller
      */
     public function index()
     {
-        $games = Game::all();
-        return view('games.index', compact('games'));
+        //
     }
 
     /**
@@ -43,21 +41,21 @@ class GameController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\game  $game
+     * @param  \App\Models\room  $room
      * @return \Illuminate\Http\Response
      */
-    public function show(game $game)
+    public function show(room $room)
     {
-        return view('games.show', compact('game'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\game  $game
+     * @param  \App\Models\room  $room
      * @return \Illuminate\Http\Response
      */
-    public function edit(game $game)
+    public function edit(room $room)
     {
         //
     }
@@ -66,10 +64,10 @@ class GameController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\game  $game
+     * @param  \App\Models\room  $room
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, game $game)
+    public function update(Request $request, room $room)
     {
         //
     }
@@ -77,10 +75,10 @@ class GameController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\game  $game
+     * @param  \App\Models\room  $room
      * @return \Illuminate\Http\Response
      */
-    public function destroy(game $game)
+    public function destroy(room $room)
     {
         //
     }

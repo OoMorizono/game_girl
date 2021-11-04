@@ -10030,3 +10030,7 @@ h3 {
 .logo {
   font-family: "Russo One";
 }
+
+.rounded {
+  border-radius: 0.25rem !important;
+}
